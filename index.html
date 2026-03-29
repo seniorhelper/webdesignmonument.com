@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design Monument CO | $99/mo Custom Websites That Rank & Convert | Eye To Ad Media</title>
+  <meta name="description" content="Monument's #1 web design team. Custom static websites built to rank on Google & AI search, convert visitors into leads, and grow your business. $99/mo special. Call 1-800-481-8638." />
+  <meta name="keywords" content="web design monument co, web designer monument colorado, website design monument, monument co web design, affordable web design monument, SEO web design monument co, custom website monument colorado" />
+  <link rel="canonical" href="https://webdesignmonument.com/" />
+  <meta property="og:title" content="Web Design Monument CO | $99/mo Websites That Rank & Convert" />
+  <meta property="og:description" content="Custom conversion-optimized websites for Monument CO businesses. SEO + AIO built-in. $99/mo. Call 1-800-481-8638." />
+  <meta property="og:url" content="https://webdesignmonument.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon: E for Eye To Ad Media -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff5c00'/><text x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'>E</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <style>
+    :root {
+      --navy: #0d1f3c;
+      --navy2: #162c52;
+      --orange: #ff5c00;
+      --orange2: #ff7a2e;
+      --lime: #b6f000;
+      --sky: #00c6ff;
+      --white: #ffffff;
+      --offwhite: #f5f7fa;
+      --text: #1a2233;
+      --muted: #5a6a84;
+      --border: #e2e8f0;
+      --gold: #ffd000;
+      --green: #22c55e;
+      --red: #ef4444;
+      --card-bg: #fff;
+      --section-alt: #f0f4ff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 17px;
+      line-height: 1.72;
+      color: var(--text);
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Syne', sans-serif;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    img { max-width: 100%; display: block; }
+
+    /* ─── TOP BAR ─── */
+    .topbar {
+      background: var(--navy);
+      color: #a8bcd4;
+      font-size: 13px;
+      text-align: center;
+      padding: 7px 20px;
+      letter-spacing: .03em;
+    }
+    .topbar a { color: var(--lime); font-weight: 700; }
+
+    /* ─── HEADER ─── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fff;
+      box-shadow: 0 2px 16px rgba(13,31,60,.12);
+    }
+    .header-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .logo-text {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+    .logo-text span { color: var(--orange); }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .phone-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+    .phone-link svg { flex-shrink: 0; }
+    .btn-header {
+      background: var(--orange);
+      color: #fff !important;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      white-space: nowrap;
+      transition: background .2s;
+    }
+    .btn-header:hover { background: var(--orange2); text-decoration: none !important; }
+
+    /* ─── NAV ─── */
+    nav {
+      background: var(--navy);
+    }
+    .nav-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .nav-inner::-webkit-scrollbar { display: none; }
+    .nav-inner a {
+      color: #a8bcd4;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 13px 14px;
+      white-space: nowrap;
+      border-bottom: 3px solid transparent;
+      transition: color .2s, border-color .2s;
+    }
+    .nav-inner a:hover, .nav-inner a.active {
+      color: var(--lime);
+      border-bottom-color: var(--lime);
+      text-decoration: none;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+      padding: 80px 24px 90px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 700px 500px at 80% 50%, rgba(255,92,0,.18) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 400px at 10% 80%, rgba(0,198,255,.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    /* Decorative grid lines */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(182,240,0,.15);
+      border: 1px solid rgba(182,240,0,.3);
+      color: var(--lime);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 4.5vw, 56px);
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+    .hero h1 .accent { color: var(--orange); }
+    .hero h1 .accent2 { color: var(--lime); }
+    .hero-sub {
+      color: #a8bcd4;
+      font-size: 18px;
+      line-height: 1.65;
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      transition: transform .15s, background .2s;
+      white-space: nowrap;
+    }
+    .btn-primary:hover { background: var(--orange2); transform: translateY(-2px); text-decoration: none; }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #fff;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: 2px solid rgba(255,255,255,.25);
+      transition: border-color .2s, background .2s;
+      white-space: nowrap;
+    }
+    .btn-ghost:hover { border-color: var(--lime); background: rgba(182,240,0,.08); text-decoration: none; color: var(--lime); }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      color: #c8d9ee;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 13px;
+      border-radius: 6px;
+    }
+    .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lime); flex-shrink: 0; }
+
+    /* Hero right — price card */
+    .hero-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.13);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .hero-card-tag {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+    .hero-price {
+      font-family: 'Syne', sans-serif;
+      font-size: 72px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .hero-price sup { font-size: 32px; vertical-align: super; color: var(--lime); }
+    .hero-price sub { font-size: 24px; vertical-align: baseline; color: #a8bcd4; }
+    .hero-card-title {
+      color: #c8d9ee;
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+    .hero-card-list {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .hero-card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #c8d9ee;
+      font-size: 14.5px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .hero-card-list li:last-child { border-bottom: none; }
+    .chk { color: var(--lime); font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    /* ─── SECTION COMMON ─── */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: clamp(26px, 3.5vw, 42px);
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 640px;
+      margin-bottom: 48px;
+      line-height: 1.7;
+    }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: var(--offwhite);
+      padding: 28px 24px;
+      border-top: 3px solid var(--orange);
+    }
+    .trust-bar-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 32px;
+      align-items: center;
+      justify-content: center;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .trust-icon { font-size: 20px; }
+
+    /* ─── WHAT WE BUILD ─── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 26px;
+      transition: box-shadow .2s, transform .2s, border-color .2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--card-accent, var(--orange));
+    }
+    .card:hover { box-shadow: 0 8px 32px rgba(13,31,60,.1); transform: translateY(-3px); border-color: var(--card-accent, var(--orange)); }
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+      background: var(--card-icon-bg, #fff4ed);
+    }
+    .card h3 { font-size: 20px; color: var(--navy); margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: 15.5px; line-height: 1.65; }
+
+    /* ─── HIGHLIGHT BOXES ─── */
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .highlight-box {
+      border-radius: 14px;
+      padding: 28px 24px;
+      font-size: 15.5px;
+      line-height: 1.65;
+    }
+    .hb-orange { background: #fff4ed; border: 1.5px solid #ffd4b3; }
+    .hb-orange strong { color: var(--orange); }
+    .hb-blue { background: #edf6ff; border: 1.5px solid #bde0ff; }
+    .hb-blue strong { color: #0066cc; }
+    .hb-green { background: #f0fff4; border: 1.5px solid #b2edc9; }
+    .hb-green strong { color: #15803d; }
+    .hb-navy { background: #eef2fa; border: 1.5px solid #c5d4ee; }
+    .hb-navy strong { color: var(--navy); }
+    .highlight-box strong { display: block; font-family: 'Syne', sans-serif; font-size: 17px; margin-bottom: 8px; }
+
+    /* ─── STATS ─── */
+    .stats-dark {
+      background: var(--navy);
+      padding: 70px 24px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .stat-item { padding: 20px; }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 52px;
+      font-weight: 800;
+      color: var(--lime);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label { color: #a8bcd4; font-size: 14px; }
+
+    /* ─── CHARTS SECTION ─── */
+    .charts-section { background: var(--section-alt); }
+    .charts-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 20px;
+    }
+    .chart-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      border: 1.5px solid var(--border);
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+    .chart-box h4 {
+      font-size: 16px;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .chart-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .chart-note a { font-size: 12px; }
+
+    /* ─── PROCESS ─── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      counter-reset: step;
+      margin-top: 16px;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: repeating-linear-gradient(90deg, var(--orange) 0, var(--orange) 8px, transparent 8px, transparent 16px);
+      z-index: 0;
+    }
+    .step {
+      text-align: center;
+      padding: 20px 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .step-num {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--lime);
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      border: 3px solid var(--lime);
+      box-shadow: 0 0 0 6px #fff;
+    }
+    .step h4 { font-size: 16px; color: var(--navy); margin-bottom: 8px; }
+    .step p { font-size: 14.5px; color: var(--muted); }
+
+    /* ─── PRICING ─── */
+    .pricing-section { background: var(--navy); }
+    .pricing-card {
+      background: rgba(255,255,255,.07);
+      border: 2px solid var(--orange);
+      border-radius: 20px;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 48px 44px;
+      text-align: center;
+      position: relative;
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .pricing-price {
+      font-family: 'Syne', sans-serif;
+      font-size: 80px;
+      font-weight: 800;
+      color: var(--lime);
+      line-height: 1;
+    }
+    .pricing-price sup { font-size: 36px; vertical-align: super; }
+    .pricing-price sub { font-size: 28px; vertical-align: baseline; color: #a8bcd4; }
+    .pricing-title { color: #fff; font-size: 22px; margin: 12px 0 8px; }
+    .pricing-subtitle { color: #a8bcd4; font-size: 15px; margin-bottom: 28px; }
+    .pricing-list {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .pricing-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #c8d9ee;
+      font-size: 15px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .pricing-list li:last-child { border-bottom: none; }
+    .pricing-list .chk { font-size: 16px; margin-top: 1px; }
+
+    /* ─── WHY BOX ─── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .why-list { list-style: none; }
+    .why-list li {
+      display: flex;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .why-list li:last-child { border-bottom: none; }
+    .why-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .wi-orange { background: #fff4ed; }
+    .wi-blue { background: #edf6ff; }
+    .wi-green { background: #f0fff4; }
+    .wi-purple { background: #f5f0ff; }
+    .why-list h4 { font-size: 16px; color: var(--navy); margin-bottom: 4px; }
+    .why-list p { font-size: 14.5px; color: var(--muted); }
+
+    .side-box {
+      background: var(--navy);
+      border-radius: 20px;
+      padding: 36px 32px;
+      color: #fff;
+    }
+    .side-box h3 { font-size: 24px; color: var(--lime); margin-bottom: 16px; }
+    .side-box p { color: #a8bcd4; font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+    .side-box .phone-big {
+      display: block;
+      font-family: 'Syne', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 8px;
+    }
+
+    /* ─── FAQ ─── */
+    .faq-section { background: var(--offwhite); }
+    .faq-list { max-width: 820px; margin: 0 auto; }
+    .faq-item {
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+    .faq-q:hover { background: #fafbff; }
+    .faq-arrow {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--offwhite);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      transition: transform .3s, background .2s;
+    }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); background: var(--orange); color: #fff; }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease;
+    }
+    .faq-a-inner {
+      padding: 0 24px 22px;
+      color: var(--muted);
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    /* ─── FORM ─── */
+    .form-section {
+      background: linear-gradient(135deg, var(--navy) 0%, #1a3a70 100%);
+      padding: 80px 24px;
+    }
+    .form-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .form-wrap .section-title { color: #fff; }
+    .form-wrap .section-sub { color: #a8bcd4; }
+
+    .contact-form {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 20px;
+      padding: 40px 36px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #c8d9ee;
+      margin-bottom: 6px;
+      letter-spacing: .03em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,.08);
+      border: 1.5px solid rgba(255,255,255,.18);
+      border-radius: 8px;
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      padding: 12px 15px;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: #6d8aaa; }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--lime); }
+    .form-group select { cursor: pointer; }
+    .form-group select option { background: var(--navy); color: #fff; }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    /* Honeypot */
+    .hp-field { position: absolute; left: -9999px; visibility: hidden; }
+
+    .captcha-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,.05);
+      border-radius: 8px;
+      border: 1.5px solid rgba(255,255,255,.12);
+    }
+    .captcha-check {
+      width: 20px; height: 20px;
+      accent-color: var(--lime);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .captcha-label { color: #c8d9ee; font-size: 14px; }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--orange);
+      color: #fff;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      padding: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+      letter-spacing: .02em;
+    }
+    .btn-submit:hover { background: var(--orange2); transform: translateY(-2px); }
+    .btn-submit:disabled { background: #666; cursor: not-allowed; transform: none; }
+
+    .form-msg {
+      margin-top: 14px;
+      padding: 13px 18px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      display: none;
+    }
+    .form-msg.success { background: rgba(34,197,94,.15); border: 1px solid rgba(34,197,94,.3); color: #86efac; display: block; }
+    .form-msg.error { background: rgba(239,68,68,.15); border: 1px solid rgba(239,68,68,.3); color: #fca5a5; display: block; }
+
+    /* ─── POWERED BY ─── */
+    .powered-strip {
+      background: var(--offwhite);
+      text-align: center;
+      padding: 22px 24px;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    .powered-strip a { font-weight: 700; color: var(--orange); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy);
+      color: #a8bcd4;
+      padding: 48px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+    .footer-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .footer-logo span { color: var(--orange); }
+    .footer-desc { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+    .footer-phone { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 20px; color: var(--lime); }
+    .footer-col h5 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .footer-col a {
+      display: block;
+      color: #a8bcd4;
+      font-size: 14px;
+      margin-bottom: 8px;
+      transition: color .2s;
+    }
+    .footer-col a:hover { color: var(--lime); text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+    .footer-bottom a { color: var(--muted); }
+    .powered-footer { color: var(--orange); font-weight: 700; }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--orange); }
+    .bc-sep { color: #ccc; }
+
+    /* ─── MISC INLINE ELEMENTS ─── */
+    .text-orange { color: var(--orange); }
+    .text-lime { color: var(--lime); }
+    .text-navy { color: var(--navy); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .why-grid { grid-template-columns: 1fr; }
+      .charts-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+      .header-cta .btn-header { display: none; }
+      .phone-link { font-size: 15px; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .contact-form { padding: 28px 20px; }
+    }
+  </style>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://webdesignmonument.com/#org",
+        "name": "Web Design Monument CO — Eye To Ad Media",
+        "url": "https://webdesignmonument.com/",
+        "telephone": "+18004818638",
+        "image": "https://webdesignmonument.com/og-image.jpg",
+        "description": "Custom conversion-optimized web design for Monument CO businesses. SEO, AIO, and Google-ready sites from $99/mo.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Monument",
+          "addressRegion": "CO",
+          "addressCountry": "US"
+        },
+        "areaServed": ["Monument CO","Colorado Springs CO","Denver CO","Colorado"],
+        "priceRange": "$$",
+        "sameAs": ["https://eyetoad.com"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://webdesignmonument.com/#website",
+        "url": "https://webdesignmonument.com/",
+        "name": "Web Design Monument CO",
+        "publisher": { "@id": "https://webdesignmonument.com/#org" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://webdesignmonument.com/#webpage",
+        "url": "https://webdesignmonument.com/",
+        "name": "Web Design Monument CO | $99/mo Websites That Rank & Convert",
+        "description": "Custom SEO-packed websites for Monument CO businesses from $99/mo. Unlimited edits, 24/7 support, Google Analytics + Search Console included.",
+        "isPartOf": { "@id": "https://webdesignmonument.com/#website" },
+        "breadcrumb": { "@id": "https://webdesignmonument.com/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://webdesignmonument.com/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://webdesignmonument.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Web Design Monument CO", "item": "https://webdesignmonument.com/#services" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Custom Web Design Monument CO",
+        "provider": { "@id": "https://webdesignmonument.com/#org" },
+        "description": "Conversion-optimized static websites for Monument Colorado businesses with built-in SEO, AIO, and Google integrations.",
+        "offers": {
+          "@type": "Offer",
+          "price": "99",
+          "priceCurrency": "USD",
+          "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99", "priceCurrency": "USD", "unitText": "MONTH" }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What does the $99/month web design Monument CO special include?", "acceptedAnswer": { "@type": "Answer", "text": "The $99/month Monument web design special includes a fully custom static website built to rank on Google and convert visitors, unlimited edits, 24/7 support, built-in SEO and AIO optimization, Google Analytics and Google Search Console integration, and technical maintenance." } },
+          { "@type": "Question", "name": "Do you serve Monument CO and the surrounding area?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We serve Monument, Colorado Springs, Castle Rock, the Denver metro area, and all of Colorado. Our team is based in the Denver/Front Range corridor." } },
+          { "@type": "Question", "name": "What makes Eye To Ad Media different from other web designers?", "acceptedAnswer": { "@type": "Answer", "text": "We specialize in conversion optimization and Google/AI search visibility — not just pretty websites. We have been doing SEO since 2012 and are leaders in AIO (AI-optimized) and GEO (generative engine optimization) strategies that help Monument businesses show up in both traditional Google results and AI search tools like ChatGPT and Perplexity." } },
+          { "@type": "Question", "name": "How long does it take to build my Monument website?", "acceptedAnswer": { "@type": "Answer", "text": "Most custom websites are completed within 5–10 business days. More complex projects may take 2–3 weeks. We keep you updated throughout and you have direct access to our team." } },
+          { "@type": "Question", "name": "Will my website rank on Google?", "acceptedAnswer": { "@type": "Answer", "text": "Every site we build is packed with on-page SEO, schema markup, optimized meta data, fast load times, and content designed to rank. We also set up Google Search Console so you can track your rankings in real time. Results vary by competition, but our approach gives you the best possible foundation." } },
+          { "@type": "Question", "name": "What is AIO web design and why does it matter?", "acceptedAnswer": { "@type": "Answer", "text": "AIO stands for AI-optimized. It means your website content is structured so it can be cited, referenced, and surfaced by AI search tools like ChatGPT, Perplexity, Google AI Overviews, and others. This is the new frontier of search visibility and we build it in from day one." } },
+          { "@type": "Question", "name": "Do you offer custom SEO campaigns for Monument businesses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer fully custom, tailored SEO campaigns. We never use cookie-cutter templates. Every campaign is researched and built specifically for your business, your market, and your goals." } },
+          { "@type": "Question", "name": "What is a static website and why is it better for small businesses?", "acceptedAnswer": { "@type": "Answer", "text": "A static website loads extremely fast because it serves pre-built HTML files directly to the browser. No database calls, no slow plugin overhead. Faster sites rank better on Google and convert more visitors into leads. They are also more secure and easier to maintain." } },
+          { "@type": "Question", "name": "Can I make changes to my website after it is built?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. All our plans include unlimited edits. Just send us what you want changed and we will handle it — usually within 1 business day." } },
+          { "@type": "Question", "name": "Do you include Google Analytics and Google Search Console?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every website includes Google Analytics 4 and Google Search Console setup. You can see exactly how many people visit your site, what keywords they used to find you, and how your rankings improve over time." } },
+          { "@type": "Question", "name": "What is conversion optimization and why does it matter?", "acceptedAnswer": { "@type": "Answer", "text": "Conversion optimization means designing your website to turn visitors into leads and customers, not just to look pretty. We use strategic layout, compelling calls to action, trust signals, fast load times, and proven design psychology to maximize your lead flow." } },
+          { "@type": "Question", "name": "Do you build websites for industries other than web design?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with contractors, home service companies, law firms, medical practices, dental offices, real estate agents, and many more. Every site is customized for your specific industry and target audience." } },
+          { "@type": "Question", "name": "Are your websites mobile-friendly?", "acceptedAnswer": { "@type": "Answer", "text": "100%. Every website we build is fully responsive and optimized for mobile devices. Over 60% of web traffic is mobile, and Google ranks mobile-friendly sites higher." } },
+          { "@type": "Question", "name": "How much does SEO cost for a Monument CO business?", "acceptedAnswer": { "@type": "Answer", "text": "Our $99/month Monument special includes a custom website packed with SEO and AIO. For full monthly SEO campaigns and ongoing content strategies, we offer custom packages designed around your budget and goals. Contact us for a free quote." } },
+          { "@type": "Question", "name": "How do I get started with a web design project in Monument CO?", "acceptedAnswer": { "@type": "Answer", "text": "Simply call us at 1-800-481-8638 or fill out the contact form on this page. We offer a free consultation, no pressure, no fluff. We will discuss your goals and recommend the best solution for your business." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  ✅ Monument CO's Conversion-First Web Design Agency &nbsp;|&nbsp;
+  <a href="tel:+18004818638">📞 Call Free: 1-800-481-8638</a> &nbsp;|&nbsp;
+  Serving Monument · Colorado Springs · Denver Metro
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="logo-text">Web Design <span>Monument</span></div>
+    <div class="header-cta">
+      <a href="tel:+18004818638" class="phone-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.22.02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        1-800-481-8638
+      </a>
+      <a href="#contact" class="btn-header">Get Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#services" class="active">Services</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#pricing">$99 Special</a>
+    <a href="#process">Our Process</a>
+    <a href="#charts">Results</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Get Started</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div style="background:#f8f9fb; border-bottom:1px solid var(--border);">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="bc-sep">›</span>
+    <a href="#services">Web Design Monument CO</a>
+    <span class="bc-sep">›</span>
+    <span>$99/mo Custom Websites</span>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">
+        <span>🏔</span> Monument CO's #1 Conversion Web Design Agency
+      </div>
+      <h1>
+        Web Design <span class="accent">Monument CO</span><br>
+        That Actually <span class="accent2">Gets You Leads</span>
+      </h1>
+      <p class="hero-sub">
+        Stop paying for a website that looks nice but does nothing. We build conversion-optimized, Google-ranking, AI-search-ready websites for Monument Colorado businesses — starting at just $99/month. Doing SEO since 2012. Real results, real transparency.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">
+          🚀 Start My $99/mo Site
+        </a>
+        <a href="tel:+18004818638" class="btn-ghost">
+          📞 Call 1-800-481-8638
+        </a>
+      </div>
+      <div class="hero-badges">
+        <div class="badge"><span class="dot"></span> SEO Since 2012</div>
+        <div class="badge"><span class="dot"></span> Unlimited Edits</div>
+        <div class="badge"><span class="dot"></span> 24/7 Support</div>
+        <div class="badge"><span class="dot"></span> Google Analytics Included</div>
+        <div class="badge"><span class="dot"></span> No Long Contracts</div>
+      </div>
+    </div>
+
+    <!-- Price card (desktop only) -->
+    <div class="hero-card">
+      <div class="hero-card-tag">🔥 Monument Special</div>
+      <div class="hero-price"><sup>$</sup>99<sub>/mo</sub></div>
+      <p class="hero-card-title">Custom Static Website — Designed to Rank & Convert</p>
+      <ul class="hero-card-list">
+        <li><span class="chk">✅</span> Custom site built for your business</li>
+        <li><span class="chk">✅</span> Full on-page SEO + AIO optimization</li>
+        <li><span class="chk">✅</span> Schema markup (Google + AI structured data)</li>
+        <li><span class="chk">✅</span> Google Analytics 4 + Search Console</li>
+        <li><span class="chk">✅</span> Unlimited edits</li>
+        <li><span class="chk">✅</span> 24/7 support — real humans</li>
+        <li><span class="chk">✅</span> Lightning-fast static build</li>
+        <li><span class="chk">✅</span> Mobile-first responsive design</li>
+      </ul>
+      <a href="#contact" class="btn-primary" style="width:100%; justify-content:center;">Get Started Now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><span class="trust-icon">📅</span> SEO & Web Design Since 2012</div>
+    <div class="trust-item"><span class="trust-icon">🎯</span> Conversion-First Strategy</div>
+    <div class="trust-item"><span class="trust-icon">🤖</span> AI-Ready AIO + GEO Websites</div>
+    <div class="trust-item"><span class="trust-icon">📊</span> Google Analytics + GSC Included</div>
+    <div class="trust-item"><span class="trust-icon">♾</span> Unlimited Edits, Zero Excuses</div>
+    <div class="trust-item"><span class="trust-icon">📍</span> Monument · Colorado Springs · Denver</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <p class="section-label">What We Build</p>
+    <h2 class="section-title">Web Design Monument CO Businesses Can Actually Use</h2>
+    <p class="section-sub">
+      A website is your hardest-working salesperson. We build sites that load fast, rank on Google, show up in AI search, and turn visitors into paying clients. No cookie-cutter templates. No fluff. Just results.
+    </p>
+
+    <div class="cards-grid">
+      <div class="card" style="--card-accent:#ff5c00; --card-icon-bg:#fff4ed;">
+        <div class="card-icon">🎯</div>
+        <h3>Conversion-Optimized Design</h3>
+        <p>Every element of your site is placed with purpose. We use strategic layouts, compelling calls to action, and proven design psychology to turn your traffic into real leads and phone calls.</p>
+      </div>
+      <div class="card" style="--card-accent:#00c6ff; --card-icon-bg:#edf6ff;">
+        <div class="card-icon">🔍</div>
+        <h3>SEO-Packed from Day One</h3>
+        <p>Your site launches already optimized — title tags, meta descriptions, H-tag hierarchy, schema markup, internal linking, and keyword-targeted content. This is how you get found on Google without waiting years.</p>
+      </div>
+      <div class="card" style="--card-accent:#b6f000; --card-icon-bg:#f5ffe0;">
+        <div class="card-icon">🤖</div>
+        <h3>AIO — AI Search Optimization</h3>
+        <p>We structure your content so it gets cited by ChatGPT, Perplexity, Google AI Overviews, and other AI search tools. This is GEO — Generative Engine Optimization — and it's the future of being found online.</p>
+      </div>
+      <div class="card" style="--card-accent:#ffd000; --card-icon-bg:#fffbea;">
+        <div class="card-icon">⚡</div>
+        <h3>Lightning-Fast Static Sites</h3>
+        <p>We build custom static HTML websites that score 95+ on Google PageSpeed. Fast sites rank higher and convert better. No slow WordPress plugins, no bloated page builders dragging you down.</p>
+      </div>
+      <div class="card" style="--card-accent:#22c55e; --card-icon-bg:#f0fff4;">
+        <div class="card-icon">📊</div>
+        <h3>Google Analytics + Search Console</h3>
+        <p>You will always know exactly what's happening with your site. We connect Google Analytics 4 and Search Console so you can see your rankings, traffic sources, and conversion data — no mystery, no guesswork.</p>
+      </div>
+      <div class="card" style="--card-accent:#a855f7; --card-icon-bg:#faf5ff;">
+        <div class="card-icon">✏️</div>
+        <h3>Custom Tailored SEO Campaigns</h3>
+        <p>Not a template. Not an algorithm. Real research, real strategy, built specifically for your Monument Colorado business and your market. We have been doing this since 2012 and the results show it.</p>
+      </div>
+    </div>
+
+    <div class="highlight-grid">
+      <div class="highlight-box hb-orange">
+        <strong>🏆 Leaders in Conversion Optimization</strong>
+        We are not your average web designer. We specialize in websites that actively grow your business. Every design decision is tied back to one question: will this get you more leads?
+      </div>
+      <div class="highlight-box hb-blue">
+        <strong>📍 Monument CO + Colorado Springs + Denver</strong>
+        We serve businesses across Monument, the Tri-Lakes area, Colorado Springs metro, and the entire Denver metro corridor. Local knowledge. National experience.
+      </div>
+      <div class="highlight-box hb-green">
+        <strong>🔎 Real Transparency — Always</strong>
+        No vanity metrics. No unethical promises. No "trust us" black box reporting. You see exactly what is happening with your rankings, your traffic, and your ROI every single month.
+      </div>
+      <div class="highlight-box hb-navy">
+        <strong>💡 Don't Hire a Designer Who Can't Code</strong>
+        Trust a team that has been building and ranking websites since 2012. We code our own sites. We practice what we preach. You won't find a better deal anywhere in Monument or the Front Range.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-dark">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Years Building & Ranking Websites</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">300+</div>
+      <div class="stat-label">Websites Launched</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">95+</div>
+      <div class="stat-label">Average PageSpeed Score</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">$99</div>
+      <div class="stat-label">Monument CO Starting Price / Month</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Unlimited Edits & Support</div>
+    </div>
+  </div>
+</div>
+
+<!-- CHARTS -->
+<section class="charts-section" id="charts">
+  <div class="section-inner">
+    <p class="section-label">Why It Matters</p>
+    <h2 class="section-title">Data-Backed Reasons to Get This Right</h2>
+    <p class="section-sub">
+      The numbers don't lie. Fast, well-optimized websites convert more visitors and rank higher. Here's what the research shows for small business websites.
+      <br><small>Sources: <a href="https://www.sbdc.org" target="_blank" rel="noopener">SBDC.org</a> · <a href="https://developers.google.com/speed" target="_blank" rel="noopener">Google PageSpeed Research</a> · <a href="https://www.semrush.com/blog/website-statistics/" target="_blank" rel="noopener">SEMrush Industry Data</a></small>
+    </p>
+    <div class="charts-grid">
+      <div class="chart-box">
+        <h4>Page Load Time vs Conversion Rate</h4>
+        <p class="chart-note">Slower sites bleed leads. Source: <a href="https://developers.google.com/speed" target="_blank" rel="noopener">Google Speed Research</a></p>
+        <canvas id="chartConversion" height="220"></canvas>
+      </div>
+      <div class="chart-box">
+        <h4>How Small Businesses Get Found Online</h4>
+        <p class="chart-note">Search dominates. Source: <a href="https://www.semrush.com/blog/website-statistics/" target="_blank" rel="noopener">SEMrush Small Business Data</a></p>
+        <canvas id="chartTraffic" height="220"></canvas>
+      </div>
+      <div class="chart-box">
+        <h4>Website ROI: SEO vs Other Channels</h4>
+        <p class="chart-note">Organic SEO delivers the highest long-term ROI. Source: <a href="https://www.sbdc.org" target="_blank" rel="noopener">SBDC Small Business Report</a></p>
+        <canvas id="chartROI" height="220"></canvas>
+      </div>
+      <div class="chart-box">
+        <h4>Mobile vs Desktop Web Traffic — 2024</h4>
+        <p class="chart-note">Mobile-first is not optional. Source: <a href="https://gs.statcounter.com" target="_blank" rel="noopener">StatCounter Global Stats</a></p>
+        <canvas id="chartMobile" height="220"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why-us">
+  <div class="section-inner">
+    <p class="section-label">Why Eye To Ad Media</p>
+    <h2 class="section-title">The Best Web Designer in Monument CO Is the One That Gets You Leads</h2>
+    <p class="section-sub">
+      Anyone can throw up a pretty template. We build websites engineered to rank, convert, and grow your business. Here's why Monument businesses choose us.
+    </p>
+
+    <div class="why-grid">
+      <ul class="why-list">
+        <li>
+          <div class="why-icon wi-orange">🏆</div>
+          <div>
+            <h4>SEO Leaders Since 2012</h4>
+            <p>We have been building and ranking websites since before most of our competitors even knew what SEO was. That experience shows in your results.</p>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon wi-blue">🤖</div>
+          <div>
+            <h4>AIO + GEO: Built for the Future of Search</h4>
+            <p>AI search tools are changing how people find businesses. We build your site to show up in both Google and AI-generated answers. Your competitors are not doing this yet.</p>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon wi-green">📊</div>
+          <div>
+            <h4>Complete Transparency — Real Data</h4>
+            <p>You see your rankings. You see your traffic. You see your leads. We tie everything into Google Analytics and Google Search Console so the data is always yours.</p>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon wi-purple">💰</div>
+          <div>
+            <h4>Unbeatable Value — $99/mo Monument Special</h4>
+            <p>You won't find a better deal in Monument, Colorado Springs, or Denver. Custom static site, full SEO, AIO, unlimited edits, and 24/7 support — all for $99 per month.</p>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon wi-orange">🎯</div>
+          <div>
+            <h4>We Actually Care About Your Business</h4>
+            <p>No unethical promises. No vanity metrics. No "trust the process" smoke and mirrors. We genuinely want your business to grow and we tell you the truth about what it takes.</p>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon wi-blue">⚙️</div>
+          <div>
+            <h4>We Code Our Own Sites — We Practice What We Preach</h4>
+            <p>Don't hire a web designer whose site doesn't even rank. Every site we build for clients uses the same conversion and SEO principles we use on our own sites.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="side-box">
+        <h3>Ready to See Real Results?</h3>
+        <p>Stop throwing money at websites that don't work. Get a custom conversion-optimized website built for Monument CO — one that actually helps you show up, stand out, and win new clients.</p>
+        <p>Call us right now for a free, no-pressure consultation. We will tell you exactly what your business needs — and what it doesn't.</p>
+        <a href="tel:+18004818638" class="phone-big">📞 1-800-481-8638</a>
+        <p style="font-size:13px; color:#6d8aaa; margin-bottom:24px;">Toll-free · Click to call · No obligation</p>
+        <a href="#contact" class="btn-primary" style="display:block; text-align:center;">Get My Free Site Audit →</a>
+        <p style="text-align:center; margin-top:18px; font-size:13px; color:#6d8aaa;">Powered by <a href="https://eyetoad.com" target="_blank" style="color:var(--orange); font-weight:700;">Eye To Ad Media</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="background:var(--section-alt);">
+  <div class="section-inner">
+    <p class="section-label">How It Works</p>
+    <h2 class="section-title">From Zero to Ranking — Our Simple 5-Step Process</h2>
+    <p class="section-sub">We keep it simple and fast. Most Monument CO websites are live and ranking within 5–10 business days.</p>
+
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Free Consultation</h4>
+        <p>We talk about your business, your goals, your competitors, and what it'll take to win in your market.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Keyword & Competitor Research</h4>
+        <p>We map out the exact terms your customers are searching in Monument and the surrounding area.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Custom Design & Build</h4>
+        <p>We design and code your site from scratch — conversion-first, mobile-first, SEO-packed, AIO-ready.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Launch & Connect Data</h4>
+        <p>We go live and connect Google Analytics 4 and Search Console so you see real data from day one.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <h4>Ongoing Support & SEO</h4>
+        <p>Unlimited edits, 24/7 support, and monthly SEO progress updates keep your rankings climbing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="section-inner">
+    <p class="section-label" style="color:var(--lime);">Monument CO Special</p>
+    <h2 class="section-title" style="color:#fff; text-align:center; margin-bottom:8px;">The Best Deal in Monument, Period.</h2>
+    <p style="color:#a8bcd4; font-size:17px; text-align:center; max-width:600px; margin:0 auto 48px;">
+      A custom SEO-powered website built to rank and convert — for less than a phone bill. You won't find a better value in Monument, Colorado Springs, or Denver.
+    </p>
+
+    <div class="pricing-card">
+      <div class="pricing-badge">🔥 Monument CO Exclusive Special</div>
+      <div class="pricing-price"><sup>$</sup>99<sub>/mo</sub></div>
+      <h3 class="pricing-title">Custom Static Website — Rank & Convert</h3>
+      <p class="pricing-subtitle">Everything you need to show up on Google, impress visitors, and generate real leads.</p>
+      <ul class="pricing-list">
+        <li><span class="chk">✅</span> Fully custom website — zero templates</li>
+        <li><span class="chk">✅</span> Complete on-page SEO optimization</li>
+        <li><span class="chk">✅</span> AIO (AI-Optimized) + GEO content structure</li>
+        <li><span class="chk">✅</span> Schema markup for Google + AI search</li>
+        <li><span class="chk">✅</span> Google Analytics 4 setup & integration</li>
+        <li><span class="chk">✅</span> Google Search Console setup & integration</li>
+        <li><span class="chk">✅</span> Mobile-first responsive design</li>
+        <li><span class="chk">✅</span> Lightning-fast static HTML — 95+ PageSpeed</li>
+        <li><span class="chk">✅</span> Unlimited edits — no nickel and diming</li>
+        <li><span class="chk">✅</span> 24/7 support — real humans, real answers</li>
+        <li><span class="chk">✅</span> Contact form with spam protection</li>
+        <li><span class="chk">✅</span> No long-term contracts required</li>
+        <li><span class="chk">✅</span> Powered by Eye To Ad Media — SEO leaders since 2012</li>
+      </ul>
+      <a href="#contact" class="btn-primary" style="display:block; text-align:center; font-size:17px; padding:16px;">
+        🚀 Claim My $99/mo Monument Website
+      </a>
+      <p style="color:#6d8aaa; font-size:13px; margin-top:14px;">Or call <a href="tel:+18004818638" style="color:var(--orange); font-weight:700;">1-800-481-8638</a> — free consultation, zero pressure.</p>
+    </div>
+
+    <div style="text-align:center; margin-top:32px;">
+      <p style="color:#a8bcd4; font-size:15px;">Also serving <strong style="color:#fff;">Colorado Springs</strong> · <strong style="color:#fff;">Denver Metro</strong> · <strong style="color:#fff;">Castle Rock</strong> · <strong style="color:#fff;">Tri-Lakes Area</strong></p>
+      <p style="color:#6d8aaa; font-size:13px; margin-top:8px;">Powered by <a href="https://eyetoad.com" target="_blank" style="color:var(--orange); font-weight:700;">Eye To Ad Media</a> — Denver's Leader in SEO + Conversion Optimization</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-inner">
+    <p class="section-label">Got Questions?</p>
+    <h2 class="section-title">Frequently Asked Questions — Web Design Monument CO</h2>
+    <p class="section-sub">Everything Monument Colorado businesses ask before getting started. Can't find your answer? Call us at <a href="tel:+18004818638">1-800-481-8638</a>.</p>
+
+    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">What does the $99/month web design Monument CO special include?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">The $99/month Monument web design special includes a fully custom static website built to rank on Google and convert visitors, unlimited edits, 24/7 support, built-in SEO and AIO optimization, schema markup, Google Analytics 4, Google Search Console integration, a contact form with spam protection, and ongoing technical maintenance. This is the best value in Monument, Colorado Springs, and the Denver metro area. You won't find more for less.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">Do you serve Monument CO and the surrounding area?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Absolutely. We serve Monument, the Tri-Lakes area, Palmer Lake, Castle Rock, Colorado Springs, and the entire Denver metro corridor. We are also a fully remote agency, so we work with businesses across Colorado and nationwide. Local knowledge, national experience — all rolled into one team that genuinely cares about your results.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">What makes Eye To Ad Media different from other web designers?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Most web designers focus on aesthetics. We focus on results. We have specialized in conversion optimization and Google search visibility since 2012. We are leaders in AIO (AI-optimized content) and GEO (Generative Engine Optimization) — strategies that help Monument businesses show up in traditional Google results AND in AI tools like ChatGPT, Perplexity, and Google AI Overviews. We also code our own sites from scratch, use real data to back every decision, and give you complete transparency into your results. We don't make unethical promises and we don't chase vanity metrics.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">How long does it take to build my Monument website?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Most custom websites are completed and live within 5 to 10 business days. More complex multi-page projects may take 2 to 3 weeks. We keep you updated at every stage. You will always know exactly where things stand and have direct access to our team throughout the process — no ticket systems, no runaround.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">Will my website actually rank on Google?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Every site we build is packed with on-page SEO — optimized title tags, meta descriptions, H-tag structure, keyword-targeted content, schema markup, fast load times, mobile-first design, and internal linking. We also connect Google Search Console so you can track your rankings in real time as they improve. Results vary by market competition, but we give you the strongest possible foundation. Many of our clients see movement within the first 60 to 90 days.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">What is AIO web design and why does it matter for my Monument business?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">AIO stands for AI-Optimized. It means your website content is structured so it can be found, cited, and surfaced by AI tools like ChatGPT, Perplexity, and Google's AI Overviews. GEO — Generative Engine Optimization — is the emerging discipline that focuses specifically on this. The businesses that get in front of AI search visibility now will have a massive advantage over competitors in the next 2 to 5 years. We build AIO and GEO strategy into every site from day one.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">Do you offer custom SEO campaigns for Monument CO businesses?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Yes, and this is a big differentiator. Every SEO campaign we run is fully custom-built around your specific business, market, and goals. We never use cookie-cutter templates or recycled strategies. We research your competitors, identify your best keyword opportunities, and build a tailored roadmap to get you ranking and converting. Call 1-800-481-8638 to discuss your custom campaign today.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">What is a static website and why is it better for small businesses?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">A static website serves pre-built HTML files directly to the browser with no database calls, no slow plugin loading, and no unnecessary overhead. The result is a site that typically loads in under 1 second and scores 95 or higher on Google PageSpeed. Faster sites rank higher on Google, bounce less, and convert more visitors into leads. Static sites are also more secure, more reliable, and cost less to host. For most small businesses in Monument CO, a custom static site is the smartest investment you can make.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">Can I make changes to my website after it launches?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Absolutely — and this is one of the things we are most proud of. All of our plans include truly unlimited edits. Just send us what you need changed and we handle it, usually within 1 business day. No nickel and diming, no "that costs extra," no frustrating back and forth. You pay $99 per month and you get a team that takes care of your site.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">What is conversion optimization and why does it matter for my Monument CO business?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Conversion optimization is the discipline of designing your website to turn visitors into leads and customers — not just to look attractive. We use strategic layout, compelling calls to action, trust signals, social proof, urgency elements, fast load times, and proven design psychology. Most websites convert less than 2% of their visitors. A well-optimized site can hit 5% to 10% or higher. That difference can mean the gap between a struggling business and a thriving one.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">Are your websites mobile-friendly?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Every single website we build is fully responsive and optimized for mobile devices. We actually design mobile-first, which means the mobile experience is the priority and desktop expands from there. Over 60% of web traffic now comes from mobile devices, and Google uses mobile-first indexing — meaning it ranks your site based on how it looks and performs on phones. A poor mobile experience is a rankings penalty you cannot afford.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">Do you include Google Analytics and Google Search Console setup?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Yes — every website includes Google Analytics 4 and Google Search Console setup at no extra charge. You will see exactly how many people visit your site, which keywords brought them there, what pages they viewed, how long they stayed, and how your rankings improve over time. This is data that belongs to you and that you can check anytime. No surprises, no black boxes, no "just trust us."</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">How much does SEO cost for a Monument CO business?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Our $99/month Monument special includes a full website packed with on-page SEO and AIO optimization from day one. For businesses that want ongoing monthly SEO campaigns — including content creation, link building, and ranking reports — we offer custom packages built around your specific goals and budget. Call 1-800-481-8638 or fill out the contact form for a free, no-pressure quote.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">What industries do you build websites for in Monument CO?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">We work with all kinds of businesses — contractors, home service companies, law firms, dental practices, medical offices, real estate agents, restaurants, retail shops, fitness studios, consultants, and more. Every site is fully customized for your specific industry and market. We are not a template shop. Each project starts with real research into your customers, your competition, and your market.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-q" onclick="toggleFAQ(this)" aria-expanded="false">
+          <span itemprop="name">How do I get started with web design in Monument CO?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="faq-a-inner" itemprop="text">Getting started is easy. Call us at 1-800-481-8638 or fill out the contact form on this page. We offer a free consultation — no pressure, no fluff, no sales tricks. We will talk about your business, your goals, and what the right solution looks like. Most clients are up and live within 5 to 10 business days. Let's get you ranking and converting today.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="form-section" id="contact">
+  <div class="form-wrap">
+    <p class="section-label" style="color:var(--lime);">Get Started Today</p>
+    <h2 class="section-title">Get a Free Quote — Monument CO Web Design</h2>
+    <p class="section-sub">
+      Tell us about your business and we will get back to you fast. Or call <a href="tel:+18004818638" style="color:var(--lime); font-weight:700;">1-800-481-8638</a> right now.
+    </p>
+
+    <!-- FormSubmit — same verified email, labeled by source site -->
+    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+
+      <!-- Honeypot spam trap (hidden from real users) -->
+      <div class="hp-field" aria-hidden="true">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <!-- FormSubmit config fields -->
+      <input type="hidden" name="_subject" value="New Lead — WebDesignMonument.com" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="source_site" value="webdesignmonument.com" />
+      <input type="hidden" name="_next" value="https://webdesignmonument.com/#contact" />
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Your Name *</label>
+          <input type="text" id="fname" name="name" placeholder="John Smith" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="fphone">Phone Number *</label>
+          <input type="tel" id="fphone" name="phone" placeholder="(719) 555-0100" required autocomplete="tel" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="femail">Email Address *</label>
+        <input type="email" id="femail" name="email" placeholder="you@yourbusiness.com" required autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="fbiz">Business Name</label>
+        <input type="text" id="fbiz" name="business" placeholder="Your Monument CO Business" />
+      </div>
+
+      <div class="form-group">
+        <label for="fservice">I'm Interested In...</label>
+        <select id="fservice" name="service">
+          <option value="">— Select a service —</option>
+          <option value="99mo-monument-website">$99/mo Monument Website Special</option>
+          <option value="seo-campaign">Custom SEO Campaign</option>
+          <option value="aio-geo">AIO + GEO Optimization</option>
+          <option value="conversion-optimization">Conversion Optimization Audit</option>
+          <option value="full-rebuild">Full Site Rebuild</option>
+          <option value="not-sure">Not Sure — I Need Advice</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fmsg">Tell Us About Your Business</label>
+        <textarea id="fmsg" name="message" placeholder="What does your business do? What are your goals? What's your current website situation?"></textarea>
+      </div>
+
+      <!-- Simple math CAPTCHA -->
+      <div class="captcha-row">
+        <input type="checkbox" class="captcha-check" id="humanCheck" required />
+        <label class="captcha-label" for="humanCheck">
+          ✅ I am a human, not a bot — please contact me about Monument web design.
+        </label>
+      </div>
+
+      <button type="submit" class="btn-submit" id="submitBtn">
+        🚀 Send My Free Quote Request
+      </button>
+
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+    <p style="text-align:center; color:#6d8aaa; font-size:13px; margin-top:18px;">
+      Powered by <a href="https://eyetoad.com" target="_blank" style="color:var(--orange); font-weight:700;">Eye To Ad Media</a> — SEO + Web Design Leaders Since 2012
+    </p>
+  </div>
+</section>
+
+<!-- POWERED BY STRIP -->
+<div class="powered-strip">
+  Web Design Monument CO — Proudly <span class="powered-footer">Powered by <a href="https://eyetoad.com" target="_blank">Eye To Ad Media</a></span> · Denver's Leader in SEO, AIO & Conversion Optimization
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Web Design <span>Monument</span></div>
+      <p class="footer-desc">
+        Custom conversion-optimized websites for Monument CO businesses. We build sites that rank on Google, show up in AI search, and actually help you get new clients. SEO leaders since 2012.
+      </p>
+      <a href="tel:+18004818638" class="footer-phone">📞 1-800-481-8638</a>
+      <p style="font-size:13px; color:#6d8aaa; margin-top:6px;">Toll-free · Monument, CO · Colorado Springs · Denver</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#services">Conversion Web Design</a>
+      <a href="#services">SEO Optimization</a>
+      <a href="#services">AIO + GEO Optimization</a>
+      <a href="#pricing">$99/mo Monument Special</a>
+      <a href="#services">Google Analytics Setup</a>
+      <a href="https://eyetoad.com" target="_blank">Full SEO Services →</a>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <a href="https://eyetoad.com" target="_blank">Eye To Ad Media</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#process">Our Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Get a Free Quote</a>
+      <a href="tel:+18004818638">Call 1-800-481-8638</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Web Design Monument CO — <a href="https://eyetoad.com" target="_blank">Eye To Ad Media</a> · Denver, CO · All Rights Reserved</span>
+    <span class="powered-footer">Powered by <a href="https://eyetoad.com" target="_blank" style="color:var(--orange);">Eye To Ad Media</a></span>
+  </div>
+</footer>
+
+<script>
+  // ─── FAQ TOGGLE ───
+  function toggleFAQ(btn) {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-a');
+    const isOpen = item.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-a').style.maxHeight = '0';
+      el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // ─── FORM SUBMIT ───
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    // Honeypot check
+    const honey = document.querySelector('input[name="_honey"]').value;
+    if (honey) return;
+
+    const btn = document.getElementById('submitBtn');
+    const msg = document.getElementById('formMsg');
+    btn.disabled = true;
+    btn.textContent = '⏳ Sending...';
+    msg.className = 'form-msg';
+
+    const form = document.getElementById('contactForm');
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/info@eyetoad.com', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      const json = await res.json();
+      if (json.success === 'true' || json.success === true) {
+        msg.className = 'form-msg success';
+        msg.textContent = '✅ Got it! We will be in touch within 1 business day. Or call 1-800-481-8638 for a faster response.';
+        form.reset();
+      } else {
+        throw new Error('Form error');
+      }
+    } catch (err) {
+      msg.className = 'form-msg error';
+      msg.textContent = '⚠️ Something went wrong. Please call 1-800-481-8638 directly — we are ready to help.';
+    }
+
+    btn.disabled = false;
+    btn.textContent = '🚀 Send My Free Quote Request';
+  }
+
+  // ─── CHARTS ───
+  document.addEventListener('DOMContentLoaded', () => {
+    const sharedOpts = {
+      responsive: true,
+      plugins: { legend: { labels: { font: { family: 'DM Sans', size: 12 }, color: '#5a6a84' } } }
+    };
+
+    // Chart 1: Load time vs conversion
+    new Chart(document.getElementById('chartConversion'), {
+      type: 'bar',
+      data: {
+        labels: ['1 sec', '2 sec', '3 sec', '4 sec', '5 sec', '6 sec'],
+        datasets: [{
+          label: 'Conversion Rate (%)',
+          data: [3.9, 3.4, 2.8, 2.1, 1.5, 0.9],
+          backgroundColor: ['#22c55e','#b6f000','#ffd000','#ff9900','#ff5c00','#ef4444'],
+          borderRadius: 6
+        }]
+      },
+      options: { ...sharedOpts, scales: { y: { beginAtZero: true, ticks: { callback: v => v + '%', color: '#5a6a84' }, grid: { color: '#f0f4ff' } }, x: { ticks: { color: '#5a6a84' }, grid: { display: false } } } }
+    });
+
+    // Chart 2: Traffic sources
+    new Chart(document.getElementById('chartTraffic'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Organic Search', 'Direct', 'Referral', 'Social', 'Paid', 'Other'],
+        datasets: [{
+          data: [53, 22, 9, 8, 5, 3],
+          backgroundColor: ['#0d1f3c','#ff5c00','#00c6ff','#b6f000','#ffd000','#a855f7'],
+          borderWidth: 2,
+          borderColor: '#fff'
+        }]
+      },
+      options: { ...sharedOpts, cutout: '60%' }
+    });
+
+    // Chart 3: ROI by channel
+    new Chart(document.getElementById('chartROI'), {
+      type: 'bar',
+      data: {
+        labels: ['Organic SEO', 'Email Mktg', 'Content Mktg', 'Social Media', 'Paid Search', 'Display Ads'],
+        datasets: [{
+          label: 'Avg. ROI',
+          data: [748, 420, 350, 190, 160, 90],
+          backgroundColor: '#0d1f3c',
+          borderRadius: 6,
+          hoverBackgroundColor: '#ff5c00'
+        }]
+      },
+      options: { ...sharedOpts, indexAxis: 'y', scales: { x: { ticks: { callback: v => v + '%', color: '#5a6a84' }, grid: { color: '#f0f4ff' } }, y: { ticks: { color: '#5a6a84' }, grid: { display: false } } } }
+    });
+
+    // Chart 4: Mobile vs Desktop
+    new Chart(document.getElementById('chartMobile'), {
+      type: 'pie',
+      data: {
+        labels: ['Mobile', 'Desktop', 'Tablet'],
+        datasets: [{
+          data: [61, 35, 4],
+          backgroundColor: ['#ff5c00','#0d1f3c','#b6f000'],
+          borderWidth: 2,
+          borderColor: '#fff'
+        }]
+      },
+      options: { ...sharedOpts }
+    });
+  });
+
+  // ─── ACTIVE NAV on scroll ───
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-inner a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.nav-inner a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
