@@ -13,8 +13,11 @@
   <meta property="og:type" content="website" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Favicon: E for Eye To Ad Media -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ff5c00'/><text x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'>E</text></svg>" />
+  <!-- Favicon — upload these files to your domain root -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -179,7 +182,6 @@
         radial-gradient(ellipse 500px 400px at 10% 80%, rgba(0,198,255,.12) 0%, transparent 60%);
       pointer-events: none;
     }
-    /* Decorative grid lines */
     .hero::after {
       content: '';
       position: absolute;
@@ -287,7 +289,6 @@
     }
     .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lime); flex-shrink: 0; }
 
-    /* Hero right — price card */
     .hero-card {
       background: rgba(255,255,255,.06);
       border: 1px solid rgba(255,255,255,.13);
@@ -650,6 +651,47 @@
       margin-bottom: 8px;
     }
 
+    /* ─── SURROUNDING CITIES ─── */
+    .cities-section { background: var(--offwhite); }
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 16px;
+    }
+    .city-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 26px;
+      transition: box-shadow .2s, transform .2s, border-color .2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .city-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--orange);
+    }
+    .city-card:hover { box-shadow: 0 8px 32px rgba(13,31,60,.1); transform: translateY(-3px); border-color: var(--orange); }
+    .city-card-icon { font-size: 28px; margin-bottom: 12px; }
+    .city-card h3 { font-size: 19px; color: var(--navy); margin-bottom: 10px; }
+    .city-card p { color: var(--muted); font-size: 15px; line-height: 1.65; margin-bottom: 14px; }
+    .city-card a.city-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .city-card a.city-link:hover { text-decoration: underline; }
+
     /* ─── FAQ ─── */
     .faq-section { background: var(--offwhite); }
     .faq-list { max-width: 820px; margin: 0 auto; }
@@ -755,7 +797,6 @@
     .form-group select option { background: var(--navy); color: #fff; }
     .form-group textarea { resize: vertical; min-height: 110px; }
 
-    /* Honeypot */
     .hp-field { position: absolute; left: -9999px; visibility: hidden; }
 
     .captcha-row {
@@ -884,7 +925,6 @@
     .breadcrumb a:hover { color: var(--orange); }
     .bc-sep { color: #ccc; }
 
-    /* ─── MISC INLINE ELEMENTS ─── */
     .text-orange { color: var(--orange); }
     .text-lime { color: var(--lime); }
     .text-navy { color: var(--navy); }
@@ -926,7 +966,18 @@
           "addressRegion": "CO",
           "addressCountry": "US"
         },
-        "areaServed": ["Monument CO","Colorado Springs CO","Denver CO","Colorado"],
+        "areaServed": [
+          "Monument CO",
+          "Colorado Springs CO",
+          "Castle Rock CO",
+          "Palmer Lake CO",
+          "Woodmoor CO",
+          "Black Forest CO",
+          "Gleneagle CO",
+          "Tri-Lakes CO",
+          "Denver CO",
+          "Colorado"
+        ],
         "priceRange": "$$",
         "sameAs": ["https://eyetoad.com"]
       },
@@ -969,21 +1020,11 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "What does the $99/month web design Monument CO special include?", "acceptedAnswer": { "@type": "Answer", "text": "The $99/month Monument web design special includes a fully custom static website built to rank on Google and convert visitors, unlimited edits, 24/7 support, built-in SEO and AIO optimization, Google Analytics and Google Search Console integration, and technical maintenance." } },
-          { "@type": "Question", "name": "Do you serve Monument CO and the surrounding area?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We serve Monument, Colorado Springs, Castle Rock, the Denver metro area, and all of Colorado. Our team is based in the Denver/Front Range corridor." } },
-          { "@type": "Question", "name": "What makes Eye To Ad Media different from other web designers?", "acceptedAnswer": { "@type": "Answer", "text": "We specialize in conversion optimization and Google/AI search visibility — not just pretty websites. We have been doing SEO since 2012 and are leaders in AIO (AI-optimized) and GEO (generative engine optimization) strategies that help Monument businesses show up in both traditional Google results and AI search tools like ChatGPT and Perplexity." } },
-          { "@type": "Question", "name": "How long does it take to build my Monument website?", "acceptedAnswer": { "@type": "Answer", "text": "Most custom websites are completed within 5–10 business days. More complex projects may take 2–3 weeks. We keep you updated throughout and you have direct access to our team." } },
-          { "@type": "Question", "name": "Will my website rank on Google?", "acceptedAnswer": { "@type": "Answer", "text": "Every site we build is packed with on-page SEO, schema markup, optimized meta data, fast load times, and content designed to rank. We also set up Google Search Console so you can track your rankings in real time. Results vary by competition, but our approach gives you the best possible foundation." } },
-          { "@type": "Question", "name": "What is AIO web design and why does it matter?", "acceptedAnswer": { "@type": "Answer", "text": "AIO stands for AI-optimized. It means your website content is structured so it can be cited, referenced, and surfaced by AI search tools like ChatGPT, Perplexity, Google AI Overviews, and others. This is the new frontier of search visibility and we build it in from day one." } },
-          { "@type": "Question", "name": "Do you offer custom SEO campaigns for Monument businesses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer fully custom, tailored SEO campaigns. We never use cookie-cutter templates. Every campaign is researched and built specifically for your business, your market, and your goals." } },
-          { "@type": "Question", "name": "What is a static website and why is it better for small businesses?", "acceptedAnswer": { "@type": "Answer", "text": "A static website loads extremely fast because it serves pre-built HTML files directly to the browser. No database calls, no slow plugin overhead. Faster sites rank better on Google and convert more visitors into leads. They are also more secure and easier to maintain." } },
-          { "@type": "Question", "name": "Can I make changes to my website after it is built?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. All our plans include unlimited edits. Just send us what you want changed and we will handle it — usually within 1 business day." } },
-          { "@type": "Question", "name": "Do you include Google Analytics and Google Search Console?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every website includes Google Analytics 4 and Google Search Console setup. You can see exactly how many people visit your site, what keywords they used to find you, and how your rankings improve over time." } },
-          { "@type": "Question", "name": "What is conversion optimization and why does it matter?", "acceptedAnswer": { "@type": "Answer", "text": "Conversion optimization means designing your website to turn visitors into leads and customers, not just to look pretty. We use strategic layout, compelling calls to action, trust signals, fast load times, and proven design psychology to maximize your lead flow." } },
-          { "@type": "Question", "name": "Do you build websites for industries other than web design?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with contractors, home service companies, law firms, medical practices, dental offices, real estate agents, and many more. Every site is customized for your specific industry and target audience." } },
-          { "@type": "Question", "name": "Are your websites mobile-friendly?", "acceptedAnswer": { "@type": "Answer", "text": "100%. Every website we build is fully responsive and optimized for mobile devices. Over 60% of web traffic is mobile, and Google ranks mobile-friendly sites higher." } },
-          { "@type": "Question", "name": "How much does SEO cost for a Monument CO business?", "acceptedAnswer": { "@type": "Answer", "text": "Our $99/month Monument special includes a custom website packed with SEO and AIO. For full monthly SEO campaigns and ongoing content strategies, we offer custom packages designed around your budget and goals. Contact us for a free quote." } },
-          { "@type": "Question", "name": "How do I get started with a web design project in Monument CO?", "acceptedAnswer": { "@type": "Answer", "text": "Simply call us at 1-800-481-8638 or fill out the contact form on this page. We offer a free consultation, no pressure, no fluff. We will discuss your goals and recommend the best solution for your business." } }
+          { "@type": "Question", "name": "What does the $99/month web design Monument CO special include?", "acceptedAnswer": { "@type": "Answer", "text": "The $99/month Monument web design special includes a fully custom static website built to rank on Google and convert visitors, unlimited edits, 24/7 support, built-in SEO and AIO optimization, Google Analytics and Search Console integration, and technical maintenance." } },
+          { "@type": "Question", "name": "Do you serve Monument CO and the surrounding area?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We serve Monument, Colorado Springs, Castle Rock, Palmer Lake, Woodmoor, Black Forest, Gleneagle, the Tri-Lakes area, the Denver metro area, and all of Colorado. Our team is based in the Denver/Front Range corridor." } },
+          { "@type": "Question", "name": "What makes Eye To Ad Media different from other web designers?", "acceptedAnswer": { "@type": "Answer", "text": "We specialize in conversion optimization and Google/AI search visibility — not just pretty websites. We have been doing SEO since 2012 and are leaders in AIO (AI-optimized) and GEO (generative engine optimization) strategies." } },
+          { "@type": "Question", "name": "How long does it take to build my Monument website?", "acceptedAnswer": { "@type": "Answer", "text": "Most custom websites are completed within 5–10 business days. More complex projects may take 2–3 weeks." } },
+          { "@type": "Question", "name": "Will my website rank on Google?", "acceptedAnswer": { "@type": "Answer", "text": "Every site we build is packed with on-page SEO, schema markup, optimized meta data, fast load times, and content designed to rank. We also set up Google Search Console so you can track your rankings in real time." } }
         ]
       }
     ]
@@ -997,7 +1038,7 @@
 <div class="topbar">
   ✅ Monument CO's Conversion-First Web Design Agency &nbsp;|&nbsp;
   <a href="tel:+18004818638">📞 Call Free: 1-800-481-8638</a> &nbsp;|&nbsp;
-  Serving Monument · Colorado Springs · Denver Metro
+  Serving Monument · Colorado Springs · Castle Rock · Denver Metro
 </div>
 
 <!-- HEADER -->
@@ -1022,6 +1063,7 @@
     <a href="#pricing">$99 Special</a>
     <a href="#process">Our Process</a>
     <a href="#charts">Results</a>
+    <a href="#cities">Service Area</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Get Started</a>
   </div>
@@ -1097,7 +1139,7 @@
     <div class="trust-item"><span class="trust-icon">🤖</span> AI-Ready AIO + GEO Websites</div>
     <div class="trust-item"><span class="trust-icon">📊</span> Google Analytics + GSC Included</div>
     <div class="trust-item"><span class="trust-icon">♾</span> Unlimited Edits, Zero Excuses</div>
-    <div class="trust-item"><span class="trust-icon">📍</span> Monument · Colorado Springs · Denver</div>
+    <div class="trust-item"><span class="trust-icon">📍</span> Monument · Colorado Springs · Castle Rock · Denver</div>
   </div>
 </div>
 
@@ -1149,8 +1191,8 @@
         We are not your average web designer. We specialize in websites that actively grow your business. Every design decision is tied back to one question: will this get you more leads?
       </div>
       <div class="highlight-box hb-blue">
-        <strong>📍 Monument CO + Colorado Springs + Denver</strong>
-        We serve businesses across Monument, the Tri-Lakes area, Colorado Springs metro, and the entire Denver metro corridor. Local knowledge. National experience.
+        <strong>📍 Monument CO + Colorado Springs + Castle Rock + Denver</strong>
+        We serve businesses across Monument, the Tri-Lakes area, Colorado Springs metro, Castle Rock, and the entire Denver metro corridor. Local knowledge. National experience.
       </div>
       <div class="highlight-box hb-green">
         <strong>🔎 Real Transparency — Always</strong>
@@ -1216,7 +1258,7 @@
         <canvas id="chartROI" height="220"></canvas>
       </div>
       <div class="chart-box">
-        <h4>Mobile vs Desktop Web Traffic — 2024</h4>
+        <h4>Mobile vs Desktop Web Traffic — 2025</h4>
         <p class="chart-note">Mobile-first is not optional. Source: <a href="https://gs.statcounter.com" target="_blank" rel="noopener">StatCounter Global Stats</a></p>
         <canvas id="chartMobile" height="220"></canvas>
       </div>
@@ -1260,7 +1302,7 @@
           <div class="why-icon wi-purple">💰</div>
           <div>
             <h4>Unbeatable Value — $99/mo Monument Special</h4>
-            <p>You won't find a better deal in Monument, Colorado Springs, or Denver. Custom static site, full SEO, AIO, unlimited edits, and 24/7 support — all for $99 per month.</p>
+            <p>You won't find a better deal in Monument, Colorado Springs, Castle Rock, or Denver. Custom static site, full SEO, AIO, unlimited edits, and 24/7 support — all for $99 per month.</p>
           </div>
         </li>
         <li>
@@ -1335,7 +1377,7 @@
     <p class="section-label" style="color:var(--lime);">Monument CO Special</p>
     <h2 class="section-title" style="color:#fff; text-align:center; margin-bottom:8px;">The Best Deal in Monument, Period.</h2>
     <p style="color:#a8bcd4; font-size:17px; text-align:center; max-width:600px; margin:0 auto 48px;">
-      A custom SEO-powered website built to rank and convert — for less than a phone bill. You won't find a better value in Monument, Colorado Springs, or Denver.
+      A custom SEO-powered website built to rank and convert — for less than a phone bill. You won't find a better value in Monument, Colorado Springs, Castle Rock, or Denver.
     </p>
 
     <div class="pricing-card">
@@ -1365,8 +1407,73 @@
     </div>
 
     <div style="text-align:center; margin-top:32px;">
-      <p style="color:#a8bcd4; font-size:15px;">Also serving <strong style="color:#fff;">Colorado Springs</strong> · <strong style="color:#fff;">Denver Metro</strong> · <strong style="color:#fff;">Castle Rock</strong> · <strong style="color:#fff;">Tri-Lakes Area</strong></p>
+      <p style="color:#a8bcd4; font-size:15px;">Also serving <strong style="color:#fff;">Colorado Springs</strong> · <strong style="color:#fff;">Castle Rock</strong> · <strong style="color:#fff;">Palmer Lake</strong> · <strong style="color:#fff;">Tri-Lakes Area</strong></p>
       <p style="color:#6d8aaa; font-size:13px; margin-top:8px;">Powered by <a href="https://eyetoad.com" target="_blank" style="color:var(--orange); font-weight:700;">Eye To Ad Media</a> — Denver's Leader in SEO + Conversion Optimization</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- SURROUNDING CITIES — NEW SECTION -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="cities-section" id="cities">
+  <div class="section-inner">
+    <p class="section-label">Service Area</p>
+    <h2 class="section-title">Monument Web Designer Serving the Entire Front Range</h2>
+    <p class="section-sub">
+      Based near the Tri-Lakes area, we build and rank websites for businesses throughout the Monument CO corridor — from Palmer Lake to Castle Rock, and all the way into Colorado Springs and Denver.
+    </p>
+
+    <div class="cities-grid">
+
+      <div class="city-card">
+        <div class="city-card-icon">🏔</div>
+        <h3>Web Designer — Colorado Springs CO</h3>
+        <p>Colorado Springs is one of Colorado's most competitive local markets. We build fast, conversion-optimized websites for Colorado Springs businesses that need to stand out and rank — from HVAC contractors to law firms to dental practices.</p>
+        <a href="/colorado-springs/" class="city-link">Colorado Springs Web Design →</a>
+      </div>
+
+      <div class="city-card">
+        <div class="city-card-icon">🏰</div>
+        <h3>Web Designer — Castle Rock CO</h3>
+        <p>Castle Rock is one of the fastest-growing communities on the Front Range. Local businesses here need a web presence that keeps up with the growth. We build Google-ranking, AIO-ready websites specifically for Castle Rock companies.</p>
+        <a href="/castle-rock/" class="city-link">Castle Rock Web Design →</a>
+      </div>
+
+      <div class="city-card">
+        <div class="city-card-icon">🌲</div>
+        <h3>Web Designer — Palmer Lake CO</h3>
+        <p>Palmer Lake businesses deserve the same top-tier web design as any big-city company. We serve this charming Tri-Lakes community with full-service custom websites, local SEO, and ongoing support that keeps you visible in local search.</p>
+        <a href="/palmer-lake/" class="city-link">Palmer Lake Web Design →</a>
+      </div>
+
+      <div class="city-card">
+        <div class="city-card-icon">🌄</div>
+        <h3>Web Designer — Woodmoor &amp; Gleneagle CO</h3>
+        <p>Woodmoor and Gleneagle sit right in our backyard. We understand this community and the competitive local search landscape here. Whether you're a home service company, a professional practice, or a retail shop — we get you found.</p>
+        <a href="#contact" class="city-link">Get a Free Quote →</a>
+      </div>
+
+      <div class="city-card">
+        <div class="city-card-icon">🌑</div>
+        <h3>Web Designer — Black Forest CO</h3>
+        <p>Black Forest businesses often get overlooked by big agencies focused on major metros. We specialize in serving communities like this — building hyper-local SEO strategies and conversion-ready websites that drive real leads from your actual service area.</p>
+        <a href="#contact" class="city-link">Get a Free Quote →</a>
+      </div>
+
+      <div class="city-card">
+        <div class="city-card-icon">🏙</div>
+        <h3>Web Designer — Denver Metro CO</h3>
+        <p>Our parent agency Eye To Ad Media is Denver's leader in SEO, AIO, and conversion optimization. Monument-area businesses that need full Denver metro reach — or vice versa — get the best of both worlds: local expertise with metro-level firepower.</p>
+        <a href="https://eyetoad.com" target="_blank" class="city-link">Visit Eye To Ad Media →</a>
+      </div>
+
+    </div>
+
+    <div style="background:#fff; border:1.5px solid var(--border); border-radius:16px; padding:32px 36px; margin-top:40px; text-align:center;">
+      <p style="font-family:'Syne',sans-serif; font-size:20px; font-weight:800; color:var(--navy); margin-bottom:10px;">Don't See Your City?</p>
+      <p style="color:var(--muted); font-size:16px; margin-bottom:22px;">We serve businesses across all of Colorado and nationwide. If you're looking for a Monument web designer who understands the Front Range, we're your team — wherever you're located.</p>
+      <a href="tel:+18004818638" class="btn-primary">📞 Call 1-800-481-8638 — Free Consultation</a>
     </div>
   </div>
 </section>
@@ -1396,7 +1503,7 @@
           <span class="faq-arrow">▼</span>
         </button>
         <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div class="faq-a-inner" itemprop="text">Absolutely. We serve Monument, the Tri-Lakes area, Palmer Lake, Castle Rock, Colorado Springs, and the entire Denver metro corridor. We are also a fully remote agency, so we work with businesses across Colorado and nationwide. Local knowledge, national experience — all rolled into one team that genuinely cares about your results.</div>
+          <div class="faq-a-inner" itemprop="text">Absolutely. We serve Monument, the Tri-Lakes area, Palmer Lake, Woodmoor, Gleneagle, Black Forest, Castle Rock, Colorado Springs, and the entire Denver metro corridor. We are also a fully remote agency, so we work with businesses across Colorado and nationwide. Local knowledge, national experience — all rolled into one team that genuinely cares about your results.</div>
         </div>
       </div>
 
@@ -1406,7 +1513,7 @@
           <span class="faq-arrow">▼</span>
         </button>
         <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div class="faq-a-inner" itemprop="text">Most web designers focus on aesthetics. We focus on results. We have specialized in conversion optimization and Google search visibility since 2012. We are leaders in AIO (AI-optimized content) and GEO (Generative Engine Optimization) — strategies that help Monument businesses show up in traditional Google results AND in AI tools like ChatGPT, Perplexity, and Google AI Overviews. We also code our own sites from scratch, use real data to back every decision, and give you complete transparency into your results. We don't make unethical promises and we don't chase vanity metrics.</div>
+          <div class="faq-a-inner" itemprop="text">Most web designers focus on aesthetics. We focus on results. We have specialized in conversion optimization and Google search visibility since 2012. We are leaders in AIO (AI-optimized content) and GEO (Generative Engine Optimization) — strategies that help Monument businesses show up in traditional Google results AND in AI tools like ChatGPT, Perplexity, and Google AI Overviews. We also code our own sites from scratch, use real data to back every decision, and give you complete transparency into your results.</div>
         </div>
       </div>
 
@@ -1543,15 +1650,12 @@
       Tell us about your business and we will get back to you fast. Or call <a href="tel:+18004818638" style="color:var(--lime); font-weight:700;">1-800-481-8638</a> right now.
     </p>
 
-    <!-- FormSubmit — same verified email, labeled by source site -->
     <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
 
-      <!-- Honeypot spam trap (hidden from real users) -->
       <div class="hp-field" aria-hidden="true">
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" />
       </div>
 
-      <!-- FormSubmit config fields -->
       <input type="hidden" name="_subject" value="New Lead — WebDesignMonument.com" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
@@ -1597,7 +1701,6 @@
         <textarea id="fmsg" name="message" placeholder="What does your business do? What are your goals? What's your current website situation?"></textarea>
       </div>
 
-      <!-- Simple math CAPTCHA -->
       <div class="captcha-row">
         <input type="checkbox" class="captcha-check" id="humanCheck" required />
         <label class="captcha-label" for="humanCheck">
@@ -1631,7 +1734,7 @@
         Custom conversion-optimized websites for Monument CO businesses. We build sites that rank on Google, show up in AI search, and actually help you get new clients. SEO leaders since 2012.
       </p>
       <a href="tel:+18004818638" class="footer-phone">📞 1-800-481-8638</a>
-      <p style="font-size:13px; color:#6d8aaa; margin-top:6px;">Toll-free · Monument, CO · Colorado Springs · Denver</p>
+      <p style="font-size:13px; color:#6d8aaa; margin-top:6px;">Toll-free · Monument, CO · Colorado Springs · Castle Rock · Denver</p>
     </div>
     <div class="footer-col">
       <h5>Services</h5>
@@ -1643,13 +1746,13 @@
       <a href="https://eyetoad.com" target="_blank">Full SEO Services →</a>
     </div>
     <div class="footer-col">
-      <h5>Company</h5>
-      <a href="https://eyetoad.com" target="_blank">Eye To Ad Media</a>
-      <a href="#why-us">Why Choose Us</a>
-      <a href="#process">Our Process</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Get a Free Quote</a>
-      <a href="tel:+18004818638">Call 1-800-481-8638</a>
+      <h5>Service Area</h5>
+      <a href="/colorado-springs/">Colorado Springs</a>
+      <a href="/castle-rock/">Castle Rock</a>
+      <a href="/palmer-lake/">Palmer Lake</a>
+      <a href="#cities">Woodmoor &amp; Gleneagle</a>
+      <a href="#cities">Black Forest</a>
+      <a href="https://eyetoad.com" target="_blank">Denver Metro →</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -1665,7 +1768,6 @@
     const answer = item.querySelector('.faq-a');
     const isOpen = item.classList.contains('open');
 
-    // Close all
     document.querySelectorAll('.faq-item.open').forEach(el => {
       el.classList.remove('open');
       el.querySelector('.faq-a').style.maxHeight = '0';
@@ -1683,7 +1785,6 @@
   async function handleSubmit(e) {
     e.preventDefault();
 
-    // Honeypot check
     const honey = document.querySelector('input[name="_honey"]').value;
     if (honey) return;
 
@@ -1726,7 +1827,6 @@
       plugins: { legend: { labels: { font: { family: 'DM Sans', size: 12 }, color: '#5a6a84' } } }
     };
 
-    // Chart 1: Load time vs conversion
     new Chart(document.getElementById('chartConversion'), {
       type: 'bar',
       data: {
@@ -1741,7 +1841,6 @@
       options: { ...sharedOpts, scales: { y: { beginAtZero: true, ticks: { callback: v => v + '%', color: '#5a6a84' }, grid: { color: '#f0f4ff' } }, x: { ticks: { color: '#5a6a84' }, grid: { display: false } } } }
     });
 
-    // Chart 2: Traffic sources
     new Chart(document.getElementById('chartTraffic'), {
       type: 'doughnut',
       data: {
@@ -1756,7 +1855,6 @@
       options: { ...sharedOpts, cutout: '60%' }
     });
 
-    // Chart 3: ROI by channel
     new Chart(document.getElementById('chartROI'), {
       type: 'bar',
       data: {
@@ -1772,7 +1870,6 @@
       options: { ...sharedOpts, indexAxis: 'y', scales: { x: { ticks: { callback: v => v + '%', color: '#5a6a84' }, grid: { color: '#f0f4ff' } }, y: { ticks: { color: '#5a6a84' }, grid: { display: false } } } }
     });
 
-    // Chart 4: Mobile vs Desktop
     new Chart(document.getElementById('chartMobile'), {
       type: 'pie',
       data: {
