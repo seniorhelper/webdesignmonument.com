@@ -411,13 +411,12 @@
     <p class="section-label" style="color:var(--lime);">Get Started Today</p>
     <h2 class="section-title">Get a Free Quote — Castle Rock Web Design</h2>
     <p class="section-sub">Tell us about your Castle Rock business and we will get back to you fast. Or call <a href="tel:+18004818638" style="color:var(--lime); font-weight:700;">1-800-481-8638</a> right now.</p>
-    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=">
       <div class="hp-field" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off" /></div>
-      <input type="hidden" name="_subject" value="New Lead — Castle Rock Web Design" />
+      <input type="hidden" name="_subject" value="New lead — webdesignmonument.com" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="source_site" value="webdesignmonument.com/castle-rock" />
-      <input type="hidden" name="_next" value="https://webdesignmonument.com/castle-rock/#contact" />
       <div class="form-row">
         <div class="form-group">
           <label for="fname">Your Name *</label>
@@ -490,23 +489,28 @@
     document.querySelectorAll('.faq-item.open').forEach(el => { el.classList.remove('open'); el.querySelector('.faq-a').style.maxHeight = '0'; el.querySelector('.faq-q').setAttribute('aria-expanded', 'false'); });
     if (!isOpen) { item.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; btn.setAttribute('aria-expanded', 'true'); }
   }
+  const PAGE_T0 = Date.now();
   async function handleSubmit(e) {
     e.preventDefault();
-    const honey = document.querySelector('input[name="_honey"]').value;
+    const form0 = document.getElementById('contactForm');
+    const honey = form0.querySelector('input[name="_honey"]').value;
     if (honey) return;
+    const msg0 = document.getElementById('formMsg');
+    if (Date.now() - PAGE_T0 < 3500) { msg0.className = 'form-msg error'; msg0.textContent = 'Give the form a moment, then send again.'; return; }
+    if (!form0.checkValidity()) { msg0.className = 'form-msg error'; msg0.textContent = 'Please fill in the required fields.'; form0.reportValidity(); return; }
     const btn = document.getElementById('submitBtn');
     const msg = document.getElementById('formMsg');
     btn.disabled = true; btn.textContent = '⏳ Sending...'; msg.className = 'form-msg';
     const data = new FormData(document.getElementById('contactForm'));
     try {
-      const res = await fetch('https://formsubmit.co/ajax/info@eyetoad.com', { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      const res = await fetch('https://formsubmit.co/ajax/' + atob(form0.dataset.a) + String.fromCharCode(64) + atob(form0.dataset.b), { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
       const json = await res.json();
       if (json.success === 'true' || json.success === true) {
         msg.className = 'form-msg success';
-        msg.textContent = '✅ Got it! We will be in touch within 1 business day. Or call 1-800-481-8638 for faster help.';
+        msg.textContent = "Sent. We'll get back to you shortly.";
         document.getElementById('contactForm').reset();
       } else { throw new Error(); }
-    } catch { msg.className = 'form-msg error'; msg.textContent = '⚠️ Something went wrong. Please call 1-800-481-8638 directly.'; }
+    } catch { msg.className = 'form-msg error'; msg.textContent = 'That did not go through. Please call 1-800-481-8638.'; }
     btn.disabled = false; btn.textContent = '🚀 Send My Free Castle Rock Quote';
   }
 </script>
